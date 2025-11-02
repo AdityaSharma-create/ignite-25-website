@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import CountdownTimer from '../components/CountdownTimer';
 import { useInView } from '../hooks/useInView';
 
+
 const HomePage: React.FC = () => {
     const scheduleDay1 = ["Dress to Impress", "Insync - Round 1", "Wolf of Wall Street - Round 1 & 2", "Caesar's Cipher", "Kryptos Visos", "Thespian of Melody"];
     const scheduleDay2 = ["Dress to Impress FINALS", "Insync - Round 2", "Wolf of Wall Street FINALS", "Battle of the Bands", "Dyed in Crimson", "Respawn Finals"];
