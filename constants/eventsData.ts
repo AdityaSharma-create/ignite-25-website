@@ -109,7 +109,7 @@ export const culturalEvents: Event[] = [
     isTeamEvent: false,
     contacts: { culturalHeads },
     logo: '/images/tom.png',
-    image: '/images/event-cards/top.png'
+    image: '/images/event-cards/tom.png'
   },
   {
     id: 'through-the-lens',
