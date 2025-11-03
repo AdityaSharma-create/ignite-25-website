@@ -92,7 +92,7 @@ export const culturalEvents: Event[] = [
   {
     id: 'respawn',
     name: 'Respawn',
-    description: "All competitors will face off in intense 1v1 battles in a single-bracket elimination tournament, putting their EAFC24 and Rocket League skills to the test. Winners progress to the next round, with all rounds culminating in a grand finale, where a victor will be decided for either game. Day 1 - EAFC24, Day 2 – Rocket League.",
+    description: "All competitors will face off in intense 1v1 battles in a single-bracket elimination tournament, putting their EAFC25 and Rocket League skills to the test. Winners progress to the next round, with all rounds culminating in a grand finale, where a victor will be decided for either game. Day 1 - EAFC24, Day 2 – Rocket League.",
     fee: '₹500',
     participants: '1',
     isTeamEvent: false,
