@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { culturalEvents, sportsEvents } from '../constants/eventsData';
@@ -97,51 +98,9 @@ const EventDetailPage: React.FC = () => {
                   </div>
                 </div>
             </div>
-            {/* Event Contacts Section */}
-            <div className="mt-16">
-              <h2 className="text-3xl font-bold mb-6 text-center lg:text-left text-[#FF7B00]">Event Contacts</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {event.contacts.eventHeads && (
-                  <div className="bg-[#181818] p-6 rounded-lg border border-gray-800">
-                    <h3 className="text-xl font-bold text-white mb-3">Event Head(s)</h3>
-                    <ul className="space-y-2">
-                      {event.contacts.eventHeads.map(contact => (
-                        <li key={contact.email}>
-                          <p className="text-gray-300">{contact.name}</p>
-                          <a href={`mailto:${contact.email}`} className="text-sm text-[#FF7B00] hover:underline break-all">{contact.email}</a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-                {event.contacts.culturalHeads && (
-                  <div className="bg-[#181818] p-6 rounded-lg border border-gray-800">
-                    <h3 className="text-xl font-bold text-white mb-3">Cultural Heads</h3>
-                    <ul className="space-y-2">
-                      {event.contacts.culturalHeads.map(contact => (
-                        <li key={contact.email}>
-                          <p className="text-gray-300">{contact.name}</p>
-                          <a href={`mailto:${contact.email}`} className="text-sm text-[#FF7B00] hover:underline break-all">{contact.email}</a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-                {event.contacts.sportsHeads && (
-                  <div className="bg-[#181818] p-6 rounded-lg border border-gray-800">
-                    <h3 className="text-xl font-bold text-white mb-3">Sports Heads</h3>
-                    <ul className="space-y-2">
-                      {event.contacts.sportsHeads.map(contact => (
-                        <li key={contact.email}>
-                          <p className="text-gray-300">{contact.name}</p>
-                          <a href={`mailto:${contact.email}`} className="text-sm text-[#FF7B00] hover:underline break-all">{contact.email}</a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </div>
+            <p className="mt-8 text-center text-gray-400">
+              Questions? Email us at <a href="mailto:ignite@greenwoodhigh.edu.in" className="text-[#FF7B00] hover:underline">ignite@greenwoodhigh.edu.in</a>
+            </p>
             </div>
         </div>
       </div>

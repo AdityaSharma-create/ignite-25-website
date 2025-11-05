@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation, useNavigate } from 'react-router-dom';
 
@@ -48,6 +49,7 @@ const Header: React.FC = () => {
       <NavLink to="/" className={getNavLinkClass} onClick={closeMenu} end>Home</NavLink>
       <NavLink to="/events/cultural" className={getNavLinkClass} onClick={closeMenu}>Events</NavLink>
       <NavLink to="/rules" className={getNavLinkClass} onClick={closeMenu}>Rules</NavLink>
+      <NavLink to="/sponsors" className={getNavLinkClass} onClick={closeMenu}>SPONSORS</NavLink>
       <a href="#contact" onClick={handleContactClick} className={`${navLinkBaseClasses} ${inactiveLinkClasses}`}>Contact</a>
     </>
   );

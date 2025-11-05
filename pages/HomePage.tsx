@@ -1,13 +1,10 @@
+
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import CountdownTimer from '../components/CountdownTimer';
 import { useInView } from '../hooks/useInView';
 
-
 const HomePage: React.FC = () => {
-    const scheduleDay1 = ["Dress to Impress", "Insync - Round 1", "Wolf of Wall Street - Round 1 & 2", "Caesar's Cipher", "Kryptos Visos", "Thespian of Melody"];
-    const scheduleDay2 = ["Dress to Impress FINALS", "Insync - Round 2", "Wolf of Wall Street FINALS", "Battle of the Bands", "Dyed in Crimson", "Respawn Finals"];
-    
     const heroRef = useRef<HTMLElement>(null);
     const [missionTitleRef, isMissionTitleInView] = useInView<HTMLHeadingElement>({ threshold: 0.5, triggerOnce: true });
 
@@ -144,21 +141,58 @@ const HomePage: React.FC = () => {
             </Link>
         </div>
       </section>
+
+      <section className="text-center py-12">
+          <h2 className="text-3xl font-bold mb-4">Get All The Details</h2>
+          <p className="text-gray-400 mb-6">Download the official Ignite '25 brochure for a complete overview of all events and rules.</p>
+          <a 
+              href="/ignite-2025-brochure.pdf" 
+              onClick={(e) => { e.preventDefault(); window.open('/ignite-2025-brochure.pdf', '_blank'); }}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-[#FF7B00] text-white font-bold py-3 px-8 rounded-lg hover:bg-red-600 transition-colors"
+          >
+              Download Brochure
+          </a>
+      </section>
       
       {/* Schedule Section */}
-      <section className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-white">Event Schedule</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-[#181818] p-6 rounded-lg">
-                <h3 className="text-2xl font-bold text-[#FF7B00] mb-4 border-b-2 border-[#FF7B00] pb-2">Day 1: 21st November</h3>
-                <ul className="space-y-3 list-disc list-inside text-gray-300">
-                    {scheduleDay1.map(event => <li key={event}>{event} <span className="text-gray-500 text-sm">(Timing TBD)</span></li>)}
+      <section className="container mx-auto px-4 py-12">
+        <h2 className="text-3xl font-bold text-center mb-10">Event Schedule</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/* DAY 1 */}
+            <div>
+                <h3 className="text-2xl font-bold mb-4 text-center">Day 1: November 21st</h3>
+                <ul className="space-y-2">
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Caesar's Cipher</span> <span>9:30 - 11:30 (max 12PM)</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Through the Lens</span> <span>9:30 - 11:00 ; 1:00 - 2:30</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Dress to Impress</span> <span>10:00 - 11:30</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>In Sync</span> <span>10:00 - 11:30</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Integration Bee</span> <span>10:00 - 12:00</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Kryptos Visos</span> <span>10:00 - 11:30</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Wolf of Wall Street</span> <span>10:00 - 11:30 ; 12:30 - 2:00</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Respawn</span> <span>10:30 - 12:00 ; 1:00 - 2:30</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Thespian of Melody</span> <span>12:00 - 1:30</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Battle of the Bands</span> <span>1:00 - 2:30 (max 3PM)</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Dyed in Crimson</span> <span>Ongoing</span></li>
+                    <li className="bg-gray-800 p-3 rounded-lg text-center text-gray-400"><span>Sports Schedule coming soon...</span></li>
                 </ul>
             </div>
-            <div className="bg-[#181818] p-6 rounded-lg">
-                <h3 className="text-2xl font-bold text-[#FF4500] mb-4 border-b-2 border-[#FF4500] pb-2">Day 2: 22nd November</h3>
-                <ul className="space-y-3 list-disc list-inside text-gray-300">
-                    {scheduleDay2.map(event => <li key={event}>{event} <span className="text-gray-500 text-sm">(Timing TBD)</span></li>)}
+            {/* DAY 2 */}
+            <div>
+                <h3 className="text-2xl font-bold mb-4 text-center">Day 2: November 22nd</h3>
+                <ul className="space-y-2">
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>In Sync</span> <span>9:00 - 10:30</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Through the Lens</span> <span>9:00 - 10:00 ; 11:00 - 12:30</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Integration Bee</span> <span>9:00 - 11:00</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Dress to Impress</span> <span>9:30 - 11:00</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Wolf of Wall Street</span> <span>9:30 - 11:30</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Respawn</span> <span>9:30 - 1:00</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Kryptos Visos</span> <span>10:00 - 11:30</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Thespian of Melody</span> <span>11:00 - 12:30</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Battle of the Bands</span> <span>12:00 - 1:30</span></li>
+                    <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Dyed in Crimson</span> <span>Ongoing</span></li>
+                    <li className="bg-gray-800 p-3 rounded-lg text-center text-gray-400"><span>Sports Schedule coming soon...</span></li>
                 </ul>
             </div>
         </div>

@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import EventsCategoryPage from './pages/EventsCategoryPage';
 import EventDetailPage from './pages/EventDetailPage';
 import RulesPage from './pages/RulesPage';
+import SponsorsPage from './pages/SponsersPage';
 
 const AnimatedRoutes: React.FC = () => {
     const location = useLocation();
@@ -17,6 +18,7 @@ const AnimatedRoutes: React.FC = () => {
                 <Route path="/events/:category" element={<EventsCategoryPage />} />
                 <Route path="/events/:category/:slug" element={<EventDetailPage />} />
                 <Route path="/rules" element={<RulesPage />} />
+                <Route path="/sponsors" element={<SponsorsPage />} />
             </Routes>
         </div>
     );
