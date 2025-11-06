@@ -17,4 +17,6 @@ export interface Event {
     sportsHeads?: Contact[];
     eventHeads?: Contact[];
   };
+  timings?: string;
+  schedule?: any;
 }

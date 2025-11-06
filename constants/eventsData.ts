@@ -92,12 +92,12 @@ export const culturalEvents: Event[] = [
   {
     id: 'respawn',
     name: 'Respawn',
-    description: "All competitors will face off in intense 1v1 battles in a single-bracket elimination tournament, putting their EAFC25 and Rocket League skills to the test. Winners progress to the next round, with all rounds culminating in a grand finale, where a victor will be decided for either game. Day 1 - EAFC24, Day 2 – Rocket League.",
+    description: "All competitors will face off in intense 1v1 battles in a single-bracket elimination tournament, putting their EAFC24 and Rocket League skills to the test. Winners progress to the next round, with all rounds culminating in a grand finale, where a victor will be decided for either game. Day 1 - EAFC24, Day 2 – Rocket League.",
     fee: '₹500',
     participants: '1',
     isTeamEvent: false,
     contacts: { culturalHeads },
-    logo: '/images/respwan.png',
+    logo: '/images/respawn.png',
     image: '/images/event-cards/respawn.png'
   },
   {
@@ -137,117 +137,240 @@ export const culturalEvents: Event[] = [
 
 export const sportsEvents: Event[] = [
   {
-    id: 'badminton',
-    name: 'Badminton',
-    description: "There will be 2 pools of teams each, matches will be conducted in a Round Robin format. The top 2 teams from each pool will advance to the semifinals round, which will be a knockout round. Each match between teams consists of 1 singles match, 1 doubles match and reverse singles.",
-    fee: '₹700',
-    participants: '2-6',
-    isTeamEvent: true,
-    contacts: {
-      eventHeads: [
-        { name: 'Inesh Dora Kanati', email: 'inesh052089@greenwoodhigh.edu.in' }
-      ],
-      sportsHeads
-    },
-    logo: '/images/badi.png',
-    image: '/images/event-cards/badi.png'
-  },
-  {
-    id: 'basketball',
-    name: 'Basketball',
-    description: "Brackets will consist of 14 teams (2 byes will enter in the second round). The tournament will be played in a knockout-style format. Matches will be officiated based on FIBA Rules. Matches will be played in 10-minute quarters for boys, 8-minute quarters for girls.",
-    fee: '₹1300',
-    participants: '10-12',
-    isTeamEvent: true,
-    contacts: {
-      eventHeads: [
-        { name: 'Samrath Singh Dhingra', email: 'samrath053134@greenwoodhigh.edu.in' },
-        { name: 'Vikrant Shetty Tomar', email: 'vikrant052641@greenwoodhigh.edu.in' }
-      ],
-      sportsHeads
-    },
-    logo: '/images/basketball.png',
-    image: '/images/event-cards/basketball.png'
-  },
-  {
-    id: 'flag-football',
-    name: 'Flag Football',
-    description: "9 v 9 on the field with 2 substitutes allowed per team. Gameplay includes 4 downs to gain 10 yards, with rules for passing, rushing, and blocking. The field is a canvas of speed and strategy. No pads, no tackles, just pure instinct, precision, and trust.",
-    fee: '₹800',
-    participants: '6-8',
-    isTeamEvent: true,
-    contacts: {
-      eventHeads: [
-        { name: 'Aditya Ganesh', email: 'aditya051758@greenwoodhigh.edu.in' }
-      ],
-      sportsHeads
-    },
-    logo: '/images/flag-football.png',
-    image: '/images/event-cards/flag-football.png'
-  },
-  {
     id: 'football',
     name: 'Football',
-    description: "The tournament will be played in a knockout-style format (single elimination). Matches will be officiated based on FIFA Laws of the Game. Boys' Matches: 30-minute halves. Girls' Matches: 20-minute halves. Tie-breaking will be decided by Extra Time & Penalty Shootouts.",
+    description: "The tournament will be played in a knockout-style format (single elimination). Matches will be officiated based on FIFA Laws of the Game.",
     fee: '₹1300',
     participants: '11-18',
     isTeamEvent: true,
-    contacts: {
-      eventHeads: [
-        { name: 'Shourya Sandhu', email: 'shourya051150@greenwoodhigh.edu.in' }
-      ],
-      sportsHeads
-    },
+    contacts: { eventHeads: [{ name: 'Shourya Sandhu', email: 'shourya051150@greenwoodhigh.edu.in' }], sportsHeads },
     logo: '/images/football.png',
-    image: '/images/event-cards/football.png'
+    image: '/images/event-cards/football.png',
+    timings: "Day 1: 9:30 AM - 2:00 PM | Day 2: 8:30 AM - 2:00 PM",
+    schedule: {
+      day1: [
+        { Time: '9:30 AM - 10:00 AM', Category: 'Girls QF', Teams: 'Team 1 vs Team 2' },
+        { Time: '10:00 AM - 10:30 AM', Category: 'Girls QF', Teams: 'Team 3 vs Team 4' },
+        { Time: '10:30 AM - 11:00 AM', Category: 'Boys R16', Teams: 'Team 1 vs Team 2' },
+        { Time: '11:00 AM - 11:30 AM', Category: 'Boys R16', Teams: 'Team 3 vs Team 4' },
+        { Time: '11:30 AM - 12:00 PM', Category: 'Girls QF', Teams: 'Team 5 vs Team 6' },
+        { Time: '12:00 PM - 12:30 PM', Category: 'Girls QF', Teams: 'Team 7 vs Team 8' },
+        { Time: '12:30 PM - 1:00 PM', Category: 'Boys R16', Teams: 'Team 7 vs Team 8' },
+        { Time: '1:00 PM - 1:30 PM', Category: 'Boys R16', Teams: 'Team 9 vs Team 10' },
+        { Time: '1:30 PM - 2:00 PM', Category: 'Buffer', Teams: 'Wrap up / Hard Stop' }
+      ],
+      day2: [
+        { Time: '8:30 AM - 9:00 AM', Category: 'Boys QF', Teams: 'Winner (T1/T2) vs Bye Team 5' },
+        { Time: '9:00 AM - 9:30 AM', Category: 'Boys QF', Teams: 'Winner (T3/T4) vs Bye Team 6' },
+        { Time: '9:30 AM - 10:00 AM', Category: 'Boys QF', Teams: 'Winner (T7/T8) vs Bye Team 11' },
+        { Time: '10:00 AM - 10:30 AM', Category: 'Boys QF', Teams: 'Winner (T9/T10) vs Bye Team 12' },
+        { Time: '10:30 AM - 11:00 AM', Category: 'Boys SF', Teams: 'Winner B-QF-1 vs Winner B-QF-2' },
+        { Time: '11:00 AM - 11:30 AM', Category: 'Boys SF', Teams: 'Winner B-QF-3 vs Winner B-QF-4' },
+        { Time: '11:30 AM - 12:00 PM', Category: '3rd Place', Teams: 'Combined Boys 3rd Place then Girls 3rd Place' },
+        { Time: '12:00 PM - 12:30 PM', Category: 'Girls SF', Teams: 'Winner G-QF-1 vs Winner G-QF-2' },
+        { Time: '12:30 PM - 1:00 PM', Category: 'Girls SF', Teams: 'Winner G-QF-3 vs Winner G-QF-4' },
+        { Time: '1:00 PM - 1:30 PM', Category: 'Girls FINAL', Teams: 'Winner G-SF-1 vs Winner G-SF-2' },
+        { Time: '1:30 PM - 2:00 PM', Category: 'Boys FINAL', Teams: 'Winner B-SF-1 vs Winner B-SF-2' }
+      ]
+    }
   },
   {
-    id: 'table-tennis',
-    name: 'Table Tennis',
-    description: "Teams of 2-5 are eligible to register, with 2 being subs. There will be 3 rounds (qualifiers, semi-finals, finals). Matches will have 2 levels: Singles and Doubles (11 points each). Official TTFI Rules will be followed.",
-    fee: '₹600',
-    participants: '2-4',
+    id: 'badminton',
+    name: 'Badminton',
+    description: "There will be 2 pools of teams each, matches will be conducted in a Round Robin format. The top 2 teams from each pool will advance to the semifinals round, which will be a knockout round.",
+    fee: '₹700',
+    participants: '2-6',
     isTeamEvent: true,
-    contacts: {
-      eventHeads: [
-        { name: 'Youkai Duan', email: 'youkai052173@greenwoodhigh.edu.in' }
+    contacts: { eventHeads: [{ name: 'Inesh Dora Kanati', email: 'inesh052089@greenwoodhigh.edu.in' }], sportsHeads },
+    logo: '/images/badi.png',
+    image: '/images/event-cards/badi.png',
+    timings: "Day 1: 9:30 AM - 2:00 PM | Day 2: 10:00 AM - 1:30 PM",
+    schedule: {
+      day1Boys: [
+        { Court: 'Court 1', Time: '9:30 AM - 10:15 AM', Round: 'Round 1 (Play-in)', Teams: 'Team 8 vs Team 9' },
+        { Court: 'Court 2', Time: '9:30 AM - 10:15 AM', Round: 'Round 1 (Play-in)', Teams: 'Team 5 vs Team 12' },
+        { Court: 'Court 1', Time: '10:15 AM - 11:00 AM', Round: 'Round 1 (Play-in)', Teams: 'Team 6 vs Team 11' },
+        { Court: 'Court 2', Time: '10:15 AM - 11:00 AM', Round: 'Round 1 (Play-in)', Teams: 'Team 7 vs Team 10' },
+        { Court: 'Court 1', Time: '11:00 AM - 11:45 AM', Round: 'Quarter-Final', Teams: 'Winner M1 (Team 1) vs Winner M2' },
+        { Court: 'Court 2', Time: '11:00 AM - 11:45 AM', Round: 'Quarter-Final', Teams: 'Winner M3 vs Winner M4 (Team 4)' },
+        { Court: 'Court 1', Time: '12:30 PM - 1:15 PM', Round: 'Quarter-Final', Teams: 'Winner M5 (Team 3) vs Winner M6' },
+        { Court: 'Court 2', Time: '12:30 PM - 1:15 PM', Round: 'Quarter-Final', Teams: 'Winner M7 vs Winner M8 (Team 2)' },
+        { Court: 'Court 1', Time: '1:15 PM - 2:00 PM', Round: 'Semi-Final', Teams: 'Winner QF1 vs Winner QF2' },
+        { Court: 'Court 2', Time: '1:15 PM - 2:00 PM', Round: 'Semi-Final', Teams: 'Winner QF3 vs Winner QF4' }
       ],
-      sportsHeads
-    },
-    logo: '/images/table-tennis.png',
-    image: '/images/event-cards/table-tennis.png'
+      day1Girls: [
+        { Court: 'Court 3', Time: '9:30 AM - 10:15 AM', Round: 'Round 1 (Play-in)', Teams: 'Team 8 vs Team 9' },
+        { Court: 'Court 4', Time: '9:30 AM - 10:15 AM', Round: 'Round 1 (Play-in)', Teams: 'Team 5 vs Team 12' },
+        { Court: 'Court 3', Time: '10:15 AM - 11:00 AM', Round: 'Round 1 (Play-in)', Teams: 'Team 6 vs Team 11' },
+        { Court: 'Court 4', Time: '10:15 AM - 11:00 AM', Round: 'Round 1 (Play-in)', Teams: 'Team 7 vs Team 10' },
+        { Court: 'Court 3', Time: '11:00 AM - 11:45 AM', Round: 'Quarter-Final', Teams: 'Winner M1 (Team 1) vs Winner M2' },
+        { Court: 'Court 4', Time: '11:00 AM - 11:45 AM', Round: 'Quarter-Final', Teams: 'Winner M3 vs Winner M4 (Team 4)' },
+        { Court: 'Court 3', Time: '12:30 PM - 1:15 PM', Round: 'Quarter-Final', Teams: 'Winner M5 (Team 3) vs Winner M6' },
+        { Court: 'Court 4', Time: '12:30 PM - 1:15 PM', Round: 'Quarter-Final', Teams: 'Winner M7 vs Winner M8 (Team 2)' },
+        { Court: 'Court 3', Time: '1:15 PM - 2:00 PM', Round: 'Semi-Final', Teams: 'Winner QF1 vs Winner QF2' },
+        { Court: 'Court 4', Time: '1:15 PM - 2:00 PM', Round: 'Semi-Final', Teams: 'Winner QF3 vs Winner QF4' }
+      ],
+      day2Boys: [
+        { Court: 'Court 2', Time: '10:00 AM - 11:00 AM', Round: '3rd Place', Teams: 'Loser SF1 vs Loser SF2' },
+        { Court: 'Court 1', Time: '12:30 PM - 1:30 PM', Round: 'Final', Teams: 'Winner SF1 vs Winner SF2' }
+      ],
+      day2Girls: [
+        { Court: 'Court 3', Time: '10:00 AM - 11:00 AM', Round: '3rd Place', Teams: 'Loser SF1 vs Loser SF2' },
+        { Court: 'Court 4', Time: '11:00 AM - 12:00 PM', Round: 'Final', Teams: 'Winner SF1 vs Winner SF2' }
+      ]
+    }
   },
   {
     id: 'tennis',
     name: 'Tennis',
-    description: "Matches will follow AITA rules. The format will be first to four games (best of seven) until the semifinals. For the semifinals and finals, matches will consist of one full set. Each participating team may have up to three members.",
+    description: "Matches will follow AITA rules. The format will be first to four games (best of seven) until the semifinals. For the semifinals and finals, matches will consist of one full set.",
     fee: '₹600',
     participants: '4',
     isTeamEvent: true,
-    contacts: {
-      eventHeads: [
-        { name: 'Arjun Voruganti', email: 'arjun052378@greenwoodhigh.edu.in' },
-        { name: 'Rishikesh Muralimohan', email: 'rishikesh052634@greenwoodhigh.edu.in' }
-      ],
-      sportsHeads
-    },
+    contacts: { eventHeads: [{ name: 'Arjun Voruganti', email: 'arjun052378@greenwoodhigh.edu.in' }, { name: 'Rishikesh Muralimohan', email: 'rishikesh052634@greenwoodhigh.edu.in' }], sportsHeads },
     logo: '/images/tennis.png',
-    image: '/images/event-cards/tennis.png'
+    image: '/images/event-cards/tennis.png',
+    timings: "Day 1: 9:30 AM - 1:45 PM | Day 2: 8:30 AM - 12:00 PM",
+    schedule: {
+      day1: [
+        { Court: 'Court 1', Time: '9:30 AM - 10:15 AM', Round: 'Group Match', Teams: '1 vs 2' },
+        { Court: 'Court 2', Time: '9:30 AM - 10:15 AM', Round: 'Group Match', Teams: '3 vs 4' },
+        { Court: 'Court 1', Time: '10:15 AM - 11:00 AM', Round: 'Group Match', Teams: '5 vs 6' },
+        { Court: 'Court 2', Time: '10:15 AM - 11:00 AM', Round: 'Group Match', Teams: '7 vs 8' },
+        { Court: 'Court 1', Time: '11:00 AM - 11:45 AM', Round: 'Group Match', Teams: '1 vs 3' },
+        { Court: 'Court 2', Time: '11:00 AM - 11:45 AM', Round: 'Group Match', Teams: '2 vs 4' },
+        { Court: 'Court 1', Time: '12:30 PM - 1:15 PM', Round: 'Group Match', Teams: '5 vs 7' },
+        { Court: 'Court 2', Time: '12:30 PM - 1:15 PM', Round: 'Group Match', Teams: '6 vs 8' },
+        { Court: 'Court 1', Time: '1:15 PM - 1:45 PM', Round: 'Group Match', Teams: '1 vs 4' },
+        { Court: 'Court 2', Time: '1:15 PM - 1:45 PM', Round: 'Group Match', Teams: '2 vs 3' }
+      ],
+      day2: [
+        { Court: 'Court 1', Time: '8:30 AM - 9:15 AM', Round: 'Group Match', Teams: '6 vs 7' },
+        { Court: 'Court 2', Time: '8:30 AM - 9:15 AM', Round: 'Group Match', Teams: '5 vs 8' },
+        { Court: 'Court 1', Time: '9:15 AM - 10:30 AM', Round: 'Semi-Final', Teams: 'SF1' },
+        { Court: 'Court 2', Time: '9:15 AM - 10:30 AM', Round: 'Semi-Final', Teams: 'SF2' },
+        { Court: 'Court 1', Time: '10:30 AM - 12:00 PM', Round: 'Final', Teams: 'Finals Singles' },
+        { Court: 'Court 2', Time: '10:30 AM - 12:00 PM', Round: 'Final', Teams: 'Finals Doubles' }
+      ]
+    }
   },
   {
     id: 'shooting',
     name: 'Shooting',
-    description: "The event will consist of a single round (40/60 shot match) in a league format; the highest scorer wins. All athletes compete individually. All matches will be conducted following the ISSF 10M Air Pistol or 10M Air Rifle Shooting handbook.",
+    description: "The event will consist of a single round (40/60 shot match) in a league format; the highest scorer wins. All athletes compete individually.",
     fee: '₹500',
     participants: '1 (Individual)',
     isTeamEvent: false,
-    contacts: {
-      eventHeads: [
-        { name: 'Sandhya Jothi Pandiyan', email: 'sandhya053140@greenwoodhigh.edu.in' }
-      ],
-      sportsHeads
-    },
+    contacts: { eventHeads: [{ name: 'Sandhya Jothi Pandiyan', email: 'sandhya053140@greenwoodhigh.edu.in' }], sportsHeads },
     logo: '/images/shooting.png',
-    image: '/images/event-cards/shooting.png'
+    image: '/images/event-cards/shooting.png',
+    timings: "Day 1: 9:30 AM - 1:45 PM | Day 2: 9:45 AM - 1:45 PM",
+    schedule: {
+      day1: [
+        { Time: '9:30 AM - 10:45 AM', Discipline: 'Rifle and Pistol NR', 'No. of Players': 10 },
+        { Time: '10:55 AM - 12:10 PM', Discipline: 'Rifle and Pistol NR', 'No. of Players': 10 },
+        { Time: '12:30 PM - 1:45 PM', Discipline: 'Rifle and Pistol NR', 'No. of Players': 10 }
+      ],
+      day1Greenwood: [
+        { Time: '10:00 AM - 11:45 AM', Discipline: 'Rifle and Pistol ISSF', 'No. of Players': 'Max 10' },
+        { Time: '12:15 PM - 1:30 PM', Discipline: 'Rifle and Pistol NR', 'No. of Players': 'Max 10' }
+      ],
+      day2: [
+        { Time: '9:45 AM - 11:30 AM', Discipline: 'Rifle and Pistol ISSF*', 'No. of Players': 10 },
+        { Time: '12:00 PM - 1:45 PM', Discipline: 'Rifle and Pistol ISSF*', 'No. of Players': 10 }
+      ]
+    }
+  },
+  {
+    id: 'flag-football',
+    name: 'Flag Football',
+    description: "9 v 9 on the field with 2 substitutes allowed per team. The field is a canvas of speed and strategy. No pads, no tackles, just pure instinct, precision, and trust.",
+    fee: '₹800',
+    participants: '6-8',
+    isTeamEvent: true,
+    contacts: { eventHeads: [{ name: 'Aditya Ganesh', email: 'aditya051758@greenwoodhigh.edu.in' }], sportsHeads },
+    logo: '/images/flag-football.png',
+    image: '/images/event-cards/flag-football.png',
+    timings: "Day 1: 9:30 AM - 1:30 PM | Day 2: 8:30 AM - 2:00 PM",
+    schedule: {
+      day1: [
+        { Time: '9:30 AM - 10:30 AM', Round: 'Qualifier 1', Teams: '(7) vs (10)' },
+        { Time: '10:30 AM - 11:30 AM', Round: 'Qualifier 2', Teams: '(8) vs (9)' },
+        { Time: '11:30 AM - 12:30 PM', Round: 'Quarterfinal 1', Teams: '(4) vs (5)' },
+        { Time: '12:30 PM - 1:30 PM', Round: 'Quarterfinal 2', Teams: '(3) vs (6)' }
+      ],
+      day2: [
+        { Time: '8:30 AM - 9:30 AM', Round: 'Quarterfinal 3', Teams: 'Q1(W) vs (2)' },
+        { Time: '9:30 AM - 10:30 AM', Round: 'Quarterfinal 4', Teams: 'Q2(W) vs (1)' },
+        { Time: '10:30 AM - 11:30 AM', Round: 'Semifinal 1', Teams: 'QF2(W) vs QF3(W)' },
+        { Time: '11:30 AM - 12:30 PM', Round: 'Semifinal 2', Teams: 'QF1(W) vs QF4(W)' },
+        { Time: '1:00 PM - 2:00 PM', Round: 'Final', Teams: 'SF1(W) vs SF2(W)' }
+      ]
+    }
+  },
+  {
+    id: 'table-tennis',
+    name: 'Table Tennis',
+    description: "Teams of 2-5 are eligible to register, with 2 being subs. There will be 3 rounds. Matches will have 2 levels: Singles and Doubles (11 points each).",
+    fee: '₹600',
+    participants: '2-5',
+    isTeamEvent: true,
+    contacts: { eventHeads: [{ name: 'Youkai Duan', email: 'youkai052173@greenwoodhigh.edu.in' }], sportsHeads },
+    logo: '/images/table-tennis.png',
+    image: '/images/event-cards/table-tennis.png',
+    timings: "Day 1: 9:30 AM - 1:45 PM | Day 2: 8:30 AM - 1:15 PM",
+    schedule: {
+      day1: [
+        { Time: '9:30 AM - 10:15 AM', Tables: '1/2/3/4', Matches: '1v2 | 3v4 | 5v6 | 7v8' },
+        { Time: '10:15 AM - 11:00 AM', Tables: '1/2', Matches: '9v10 | 1v3' },
+        { Time: '11:00 AM - 11:45 AM', Tables: '3/4', Matches: '2v4 | 5v7' },
+        { Time: '12:30 PM - 1:15 PM', Tables: '1/2/3/4', Matches: '6v8 | 1v4 | 2v3 | 9v10' },
+        { Time: '1:15 PM - 1:45 PM', Tables: 'All', Matches: 'Catch-up / Buffer' }
+      ],
+      day2: [
+        { Time: '8:30 AM - 9:15 AM', Tables: '1/2/3/4', Matches: '6v7 | 5v8 | 9v10 | 1v3' },
+        { Time: '9:15 AM - 10:30 AM', Tables: '1/2', Matches: 'Semi-Final 1 | Semi-Final 2' },
+        { Time: '10:30 AM - 12:00 PM', Tables: '1', Matches: 'Finals (Singles)' },
+        { Time: '12:30 PM - 1:15 PM', Tables: '1', Matches: 'Finals (Doubles) / Secret Format' }
+      ]
+    }
+  },
+  {
+    id: 'basketball',
+    name: 'Basketball',
+    description: "Brackets will consist of 14 teams (2 byes will enter in the second round). The tournament will be played in a knockout-style format.",
+    fee: '₹1300',
+    participants: '10-12',
+    isTeamEvent: true,
+    contacts: { eventHeads: [{ name: 'Samrath Singh Dhingra', email: 'samrath053134@greenwoodhigh.edu.in' }, { name: 'Vikrant Shetty Tomar', email: 'vikrant052641@greenwoodhigh.edu.in' }], sportsHeads },
+    logo: '/images/basketball.png',
+    image: '/images/event-cards/basketball.png',
+    timings: "Day 1: 9:30 AM - 1:50 PM | Day 2: 8:30 AM - 12:50 PM",
+    schedule: {
+      day1: [
+        { 'Match Number': 'R1 Match 1 (Boys)', Court: 'ICSE Court 1', 'Time Period': '9:30 AM - 10:25 AM' },
+        { 'Match Number': 'R1 Match 2 (Boys)', Court: 'ICSE Court 2', 'Time Period': '9:30 AM - 10:25 AM' },
+        { 'Match Number': 'R1 Match 1 (Girls)', Court: 'IB Court', 'Time Period': '9:30 AM - 10:15 AM' },
+        { 'Match Number': 'R1 Match 3 (Boys)', Court: 'ICSE Court 1', 'Time Period': '10:35 AM - 11:30 AM' },
+        { 'Match Number': 'R1 Match 4 (Boys)', Court: 'ICSE Court 2', 'Time Period': '10:35 AM - 11:30 AM' },
+        { 'Match Number': 'R1 Match 2 (Girls)', Court: 'IB Court', 'Time Period': '10:35 AM - 11:20 AM' },
+        { 'Match Number': 'R2 Match 1 (Boys)', Court: 'ICSE Court 1', 'Time Period': '11:30 AM - 12:25 PM' },
+        { 'Match Number': 'R2 Match 2 (Boys)', Court: 'ICSE Court 2', 'Time Period': '11:30 AM - 12:25 PM' },
+        { 'Match Number': 'R1 Match 3 (Girls)', Court: 'IB Court', 'Time Period': '11:30 AM - 12:15 PM' },
+        { 'Match Number': 'R2 Match 3 (Boys)', Court: 'ICSE Court 1', 'Time Period': '12:55 PM - 1:50 PM' },
+        { 'Match Number': 'R2 Match 4 (Boys)', Court: 'ICSE Court 2', 'Time Period': '12:55 PM - 1:50 PM' },
+        { 'Match Number': 'R1 Match 4 (Girls)', Court: 'IB Court', 'Time Period': '12:55 PM - 1:40 PM' }
+      ],
+      day2: [
+        { 'Match Number': "Boy's Semifinal 1", Court: 'ICSE Court 1', 'Time Period': '8:30 AM - 9:25 AM' },
+        { 'Match Number': "Girl's Semifinal 1", Court: 'ICSE Court 2', 'Time Period': '8:30 AM - 9:15 AM' },
+        { 'Match Number': "Boy's Semifinal 2", Court: 'IB Court', 'Time Period': '8:30 AM - 9:25 AM' },
+        { 'Match Number': "Girl's Semifinal 2", Court: 'ICSE Court 2', 'Time Period': '9:40 AM - 10:25 AM' },
+        { 'Match Number': "Boy's Third Place Match", Court: 'ICSE Court 1', 'Time Period': '9:40 AM - 10:35 AM' },
+        { 'Match Number': "Girl's Third Place Match", Court: 'IB Court', 'Time Period': '11:00 AM - 11:45 AM' },
+        { 'Match Number': "Girl's Finals", Court: 'ICSE Court 2', 'Time Period': '11:00 AM - 11:45 AM' },
+        { 'Match Number': "Boy's Finals", Court: 'ICSE Court 1', 'Time Period': '11:45 AM - 12:50 PM' }
+      ]
+    }
   }
 ];

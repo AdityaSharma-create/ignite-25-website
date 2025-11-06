@@ -126,7 +126,7 @@ const HomePage: React.FC = () => {
             <Link to="/events/cultural" className="group relative block h-80 rounded-lg overflow-hidden shadow-2xl shadow-black/50">
                 <div 
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-110"
-                    style={{ backgroundImage: "url('images/Culture-BG-16-9.webp')" }}
+                    style={{ backgroundImage: "url('images/Culture-BG-16-9.webp')"  }}
                 ></div>
                 <div className="absolute inset-0 bg-black/70 transition-all duration-300 group-hover:bg-black/50"></div>
                 <h3 className="absolute inset-0 flex items-center justify-center text-4xl font-black text-white uppercase tracking-wider transition-transform duration-300 group-hover:scale-105">Cultural Events</h3>
@@ -134,7 +134,7 @@ const HomePage: React.FC = () => {
             <Link to="/events/sports" className="group relative block h-80 rounded-lg overflow-hidden shadow-2xl shadow-black/50">
                 <div 
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-110"
-                    style={{ backgroundImage: "url('images/Sports-BG-16-9.webp')" }}
+                    style={{ backgroundImage: "url('images/Sports-BG-16-9.webp')"  }}
                 ></div>
                 <div className="absolute inset-0 bg-black/70 transition-all duration-300 group-hover:bg-black/50"></div>
                 <h3 className="absolute inset-0 flex items-center justify-center text-4xl font-black text-white uppercase tracking-wider transition-transform duration-300 group-hover:scale-105">Sports Events</h3>
@@ -147,7 +147,6 @@ const HomePage: React.FC = () => {
           <p className="text-gray-400 mb-6">Download the official Ignite '25 brochure for a complete overview of all events and rules.</p>
           <a 
               href="/ignite-2025-brochure.pdf" 
-              onClick={(e) => { e.preventDefault(); window.open('/ignite-2025-brochure.pdf', '_blank'); }}
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-[#FF7B00] text-white font-bold py-3 px-8 rounded-lg hover:bg-red-600 transition-colors"
@@ -175,7 +174,7 @@ const HomePage: React.FC = () => {
                     <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Thespian of Melody</span> <span>12:00 - 1:30</span></li>
                     <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Battle of the Bands</span> <span>1:00 - 2:30 (max 3PM)</span></li>
                     <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Dyed in Crimson</span> <span>Ongoing</span></li>
-                    <li className="bg-gray-800 p-3 rounded-lg text-center text-gray-400"><span>Sports Schedule coming soon...</span></li>
+                    <li className="bg-gray-800 p-3 rounded-lg text-center text-gray-400"><span>Schedule for each sport available in individual event pages</span></li>
                 </ul>
             </div>
             {/* DAY 2 */}
@@ -192,7 +191,7 @@ const HomePage: React.FC = () => {
                     <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Thespian of Melody</span> <span>11:00 - 12:30</span></li>
                     <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Battle of the Bands</span> <span>12:00 - 1:30</span></li>
                     <li className="bg-[#181818] p-3 rounded-lg flex justify-between"><span>Dyed in Crimson</span> <span>Ongoing</span></li>
-                    <li className="bg-gray-800 p-3 rounded-lg text-center text-gray-400"><span>Sports Schedule coming soon...</span></li>
+                    <li className="bg-gray-800 p-3 rounded-lg text-center text-gray-400"><span>Schedule for each sport available in individual event pages</span></li>
                 </ul>
             </div>
         </div>
