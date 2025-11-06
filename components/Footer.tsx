@@ -22,15 +22,6 @@ const Footer: React.FC = () => {
           <h4 className="font-bold text-lg mb-4 text-white">Key Contacts</h4>
           <div className="space-y-4 text-sm">
             <div>
-              <h5 className="font-semibold text-gray-300 mb-1">Ignite Heads</h5>
-              <ul className="space-y-1 text-gray-400">
-                <li>Amisha Sharma: <a href="mailto:amisha051273@greenwoodhigh.edu.in" className="hover:text-[#FF7B00]">amisha051273@greenwoodhigh.edu.in</a></li>
-                <li>Varun Vasudevan Iyer: <a href="mailto:varun070052@greenwoodhigh.edu.in" className="hover:text-[#FF7B00]">varun070052@greenwoodhigh.edu.in</a></li>
-                <li>Shriya Reddy Ramakrishna: <a href="mailto:shriya025052@greenwoodhigh.edu.in" className="hover:text-[#FF7B00]">shriya025052@greenwoodhigh.edu.in</a></li>
-                <li>Aahana Sigtia: <a href="mailto:aahana052306@greenwoodhigh.edu.in" className="hover:text-[#FF7B00]">aahana052306@greenwoodhigh.edu.in</a></li>
-              </ul>
-            </div>
-            <div>
               <h5 className="font-semibold text-gray-300 mb-1">Teachers-in-Charge</h5>
               <ul className="space-y-1 text-gray-400">
                 <li>Ms. Saheli Gupta: <a href="mailto:sahelig@greenwoodhigh.edu.in" className="hover:text-[#FF7B00]">sahelig@greenwoodhigh.edu.in</a></li>
