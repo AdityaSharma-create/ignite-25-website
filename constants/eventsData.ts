@@ -92,7 +92,7 @@ export const culturalEvents: Event[] = [
   {
     id: 'respawn',
     name: 'Respawn',
-    description: "All competitors will face off in intense 1v1 battles in a single-bracket elimination tournament, putting their EAFC24 and Rocket League skills to the test. Winners progress to the next round, with all rounds culminating in a grand finale, where a victor will be decided for either game. Day 1 - EAFC24, Day 2 – Rocket League.",
+    description: "All competitors will face off in intense 1v1 battles in a single-bracket elimination tournament, putting their EAFC24 and Rocket League skills to the test. Winners progress to the next round, with all rounds culminating in a grand finale, where a victor will be decided for either game. Day 1 - EAFC25, Day 2 – Rocket League.",
     fee: '₹500',
     participants: '1',
     isTeamEvent: false,
@@ -125,8 +125,8 @@ export const culturalEvents: Event[] = [
   {
     id: 'wolf-of-wall-street',
     name: 'Wolf of Wall Street',
-    description: "Teams battle it out in a high-stakes stock market simulation inspired by the film. Earn insider info, trade smart under the watchful eyes of inspectors, and face the auditors in a dramatic final showdown.",
-    fee: '₹800',
+    description: "Teams of 3-8 will compete with each other using their chosen set of songs and presenting their musical skills. On the second day, each band must add a 50-60 second orignally composed sequence that is not part of the original song, for example, inserting an instrumental solo into one of their chosen songs or between 2 songs. Each band will be given 6-9 minutes for their performance on both days.",
+    fee: '₹800',  
     participants: '3-4',
     isTeamEvent: true,
     contacts: { culturalHeads },
