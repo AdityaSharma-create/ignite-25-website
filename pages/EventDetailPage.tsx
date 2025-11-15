@@ -77,7 +77,7 @@ const EventDetailPage: React.FC = () => {
                 {/* Left Column */}
                 <div className="lg:col-span-2">
                   <h2 className="text-3xl font-bold mb-4 text-[#FF7B00]">Description</h2>
-                  <p className="text-gray-300 leading-relaxed mb-8 whitespace-pre-line">{event.description}</p>
+                  <div className="text-gray-300 leading-relaxed mb-8" dangerouslySetInnerHTML={{ __html: event.description }} />
                   
                   {event.schedule && (
                     <section className="mt-12">

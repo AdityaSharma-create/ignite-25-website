@@ -257,27 +257,47 @@
     {
       id: 'shooting',
       name: 'Shooting',
-      description: "The event will consist of a single round (40/60 shot match for ISSF/NR), and the highest scorer wins. All athletes compete individually.",
+      description: `
+      <p>The event will consist of a single 40-shot match, and the highest scorer wins. All athletes compete individually on a paper target.</p>
+      <br />
+      <strong>Important Notes:</strong>
+      <ul class="list-disc list-inside mt-2">
+        <li>All shooters are requested to report 10-15 minutes before their registration timings.</li>
+        <li>There will be 8 shooters per detail, with all of them competing in paper targets.</li>
+        <li>There will be no separation of ISSF and NR shooters.</li>
+      </ul>
+    `,
       fee: '₹500',
       participants: '1 (Individual)',
       isTeamEvent: false,
       contacts: { eventHeads: [{ name: 'Sandhya Jothi Pandiyan', email: 'sandhya053140@greenwoodhigh.edu.in' }], sportsHeads },
       logo: '/images/shooting.png',
-      image: '/images/event-cards/shooting.png',
-      timings: "Day 1: 9:30 AM - 1:45 PM | Day 2: 9:45 AM - 1:45 PM",
+      image: '/images/event-cards/shooting.webp',
+      timings: "Day 1: 9:15 AM - 1:45 PM | Day 2: 9:00 AM - 1:55 PM",
       schedule: {
         day1: [
-          { Time: '9:30 AM - 10:45 AM', Discipline: 'Rifle and Pistol NR', 'No. of Players': 10 },
-          { Time: '10:55 AM - 12:10 PM', Discipline: 'Rifle and Pistol NR', 'No. of Players': 10 },
-          { Time: '12:30 PM - 1:45 PM', Discipline: 'Rifle and Pistol NR', 'No. of Players': 10 }
-        ],
-        day1Greenwood: [
-          { Time: '10:00 AM - 11:45 AM', Discipline: 'Rifle and Pistol ISSF', 'No. of Players': 'Max 10' },
-          { Time: '12:15 PM - 1:30 PM', Discipline: 'Rifle and Pistol NR', 'No. of Players': 'Max 10' }
+          { Time: '09:15 - 09:30', Schedule: 'Detail 1 sighting time' },
+          { Time: '09:30 - 10:30', Schedule: 'Detail 1 match time' },
+          { Time: '10:20 - 10:25', Schedule: 'Registrations + security check for detail 2' },
+          { Time: '10:35 - 10:50', Schedule: 'Detail 2 sighting time' },
+          { Time: '10:50 - 11:50', Schedule: 'Detail 2 match time' },
+          { Time: '11:50 - 12:10', Schedule: 'Lunch break' },
+          { Time: '12:15 - 12:20', Schedule: 'Registrations + security check for detail 3' },
+          { Time: '12:30 - 12:45', Schedule: 'Detail 3 sighting time' },
+          { Time: '12:45 - 01:45', Schedule: 'Detail 3 match time' }
         ],
         day2: [
-          { Time: '9:45 AM - 11:30 AM', Discipline: 'Rifle and Pistol ISSF*', 'No. of Players': 10 },
-          { Time: '12:00 PM - 1:45 PM', Discipline: 'Rifle and Pistol ISSF*', 'No. of Players': 10 }
+          { Time: '09:00 - 09:05', Schedule: 'Registrations + security check for detail 1' },
+          { Time: '09:15 - 09:30', Schedule: 'Detail 1 sighting time' },
+          { Time: '09:30 - 10:30', Schedule: 'Detail 1 match time' },
+          { Time: '10:20 - 10:25', Schedule: 'Registrations + security check for detail 2' },
+          { Time: '10:35 - 10:50', Schedule: 'Detail 2 sighting time' },
+          { Time: '10:50 - 11:50', Schedule: 'Detail 2 match time' },
+          { Time: '11:50 - 12:10', Schedule: 'Lunch break' },
+          { Time: '12:15 - 12:20', Schedule: 'Registrations + security check for detail 3' },
+          { Time: '12:30 - 12:45', Schedule: 'Detail 3 sighting time' },
+          { Time: '12:45 - 01:45', Schedule: 'Detail 3 match time' },
+          { Time: '01:55', Schedule: 'Match results posted' }
         ]
       }
     },
