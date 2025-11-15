@@ -278,23 +278,18 @@
         day1: [
           { Time: '09:15 - 09:30', Schedule: 'Detail 1 sighting time' },
           { Time: '09:30 - 10:30', Schedule: 'Detail 1 match time' },
-          { Time: '10:20 - 10:25', Schedule: 'Registrations + security check for detail 2' },
           { Time: '10:35 - 10:50', Schedule: 'Detail 2 sighting time' },
           { Time: '10:50 - 11:50', Schedule: 'Detail 2 match time' },
           { Time: '11:50 - 12:10', Schedule: 'Lunch break' },
-          { Time: '12:15 - 12:20', Schedule: 'Registrations + security check for detail 3' },
           { Time: '12:30 - 12:45', Schedule: 'Detail 3 sighting time' },
           { Time: '12:45 - 01:45', Schedule: 'Detail 3 match time' }
         ],
         day2: [
-          { Time: '09:00 - 09:05', Schedule: 'Registrations + security check for detail 1' },
           { Time: '09:15 - 09:30', Schedule: 'Detail 1 sighting time' },
           { Time: '09:30 - 10:30', Schedule: 'Detail 1 match time' },
-          { Time: '10:20 - 10:25', Schedule: 'Registrations + security check for detail 2' },
           { Time: '10:35 - 10:50', Schedule: 'Detail 2 sighting time' },
           { Time: '10:50 - 11:50', Schedule: 'Detail 2 match time' },
           { Time: '11:50 - 12:10', Schedule: 'Lunch break' },
-          { Time: '12:15 - 12:20', Schedule: 'Registrations + security check for detail 3' },
           { Time: '12:30 - 12:45', Schedule: 'Detail 3 sighting time' },
           { Time: '12:45 - 01:45', Schedule: 'Detail 3 match time' },
           { Time: '01:55', Schedule: 'Match results posted' }
