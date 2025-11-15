@@ -66,7 +66,7 @@ const HomePage: React.FC = () => {
         <div 
             className="absolute inset-0 bg-cover bg-center hero-bg"
             style={{ 
-                backgroundImage: "url('https://picsum.photos/seed/hero-ignite-logo/1920/1080')",
+                backgroundImage: "url('images/main-logo.webp')"  ,
                 transition: 'transform 0.3s ease-out',
                 willChange: 'transform',
                 transform: 'scale(1.1)'
@@ -127,7 +127,7 @@ const HomePage: React.FC = () => {
             <Link to="/events/cultural" className="group relative block h-80 rounded-lg overflow-hidden shadow-2xl shadow-black/50">
                 <div 
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-110"
-                    style={{ backgroundImage: "url('https://picsum.photos/seed/cultural-card-bg/800/600')" }}
+                    style={{ backgroundImage:   "url('images/Culture-BG-16-9.webp')"}}
                 ></div>
                 <div className="absolute inset-0 bg-black/70 transition-all duration-300 group-hover:bg-black/50"></div>
                 <h3 className="absolute inset-0 flex items-center justify-center text-4xl font-black text-white uppercase tracking-wider transition-transform duration-300 group-hover:scale-105">Cultural Events</h3>
@@ -135,7 +135,7 @@ const HomePage: React.FC = () => {
             <Link to="/events/sports" className="group relative block h-80 rounded-lg overflow-hidden shadow-2xl shadow-black/50">
                 <div 
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-110"
-                    style={{ backgroundImage: "url('https://picsum.photos/seed/sports-card-bg/800/600')" }}
+                    style={{ backgroundImage:    "url('images/Sports-BG-16-9.webp')" }}
                 ></div>
                 <div className="absolute inset-0 bg-black/70 transition-all duration-300 group-hover:bg-black/50"></div>
                 <h3 className="absolute inset-0 flex items-center justify-center text-4xl font-black text-white uppercase tracking-wider transition-transform duration-300 group-hover:scale-105">Sports Events</h3>
