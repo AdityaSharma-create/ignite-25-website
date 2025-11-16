@@ -160,43 +160,49 @@
 
   export const sportsEvents: Event[] = [
     {
-      id: 'football',
-      name: 'Football',
-      description: "The tournament will be played in a knockout-style format (single elimination). Matches will be officiated based on FIFA Laws of the Game. Team sizes are 11-18 players for Boys and 7-12 players for Girls.",
-      fee: '₹1300',
-      participants: '11-18',
-      isTeamEvent: true,
-      contacts: { eventHeads: [{ name: 'Shourya Sandhu', email: 'shourya051150@greenwoodhigh.edu.in' }], sportsHeads },
-      logo: '/images/football.png',
-      image: '/images/event-cards/football.png',
-      timings: "Day 1: 9:30 AM - 2:00 PM | Day 2: 8:30 AM - 2:00 PM",
-      schedule: {
-        day1: [
-          { Time: '9:30 AM - 10:00 AM', Category: 'Girls QF', Teams: 'Team 1 vs Team 2' },
-          { Time: '10:00 AM - 10:30 AM', Category: 'Girls QF', Teams: 'Team 3 vs Team 4' },
-          { Time: '10:30 AM - 11:00 AM', Category: 'Boys R16', Teams: 'Team 1 vs Team 2' },
-          { Time: '11:00 AM - 11:30 AM', Category: 'Boys R16', Teams: 'Team 3 vs Team 4' },
-          { Time: '11:30 AM - 12:00 PM', Category: 'Girls QF', Teams: 'Team 5 vs Team 6' },
-          { Time: '12:00 PM - 12:30 PM', Category: 'Girls QF', Teams: 'Team 7 vs Team 8' },
-          { Time: '12:30 PM - 1:00 PM', Category: 'Boys R16', Teams: 'Team 7 vs Team 8' },
-          { Time: '1:00 PM - 1:30 PM', Category: 'Boys R16', Teams: 'Team 9 vs Team 10' },
-          { Time: '1:30 PM - 2:00 PM', Category: 'Buffer', Teams: 'Wrap up / Hard Stop' }
-        ],
-        day2: [
-          { Time: '8:30 AM - 9:00 AM', Category: 'Boys QF', Teams: 'Winner (T1/T2) vs Bye Team 5' },
-          { Time: '9:00 AM - 9:30 AM', Category: 'Boys QF', Teams: 'Winner (T3/T4) vs Bye Team 6' },
-          { Time: '9:30 AM - 10:00 AM', Category: 'Boys QF', Teams: 'Winner (T7/T8) vs Bye Team 11' },
-          { Time: '10:00 AM - 10:30 AM', Category: 'Boys QF', Teams: 'Winner (T9/T10) vs Bye Team 12' },
-          { Time: '10:30 AM - 11:00 AM', Category: 'Boys SF', Teams: 'Winner B-QF-1 vs Winner B-QF-2' },
-          { Time: '11:00 AM - 11:30 AM', Category: 'Boys SF', Teams: 'Winner B-QF-3 vs Winner B-QF-4' },
-          { Time: '11:30 AM - 12:00 PM', Category: '3rd Place', Teams: 'Combined Boys 3rd Place then Girls 3rd Place' },
-          { Time: '12:00 PM - 12:30 PM', Category: 'Girls SF', Teams: 'Winner G-QF-1 vs Winner G-QF-2' },
-          { Time: '12:30 PM - 1:00 PM', Category: 'Girls SF', Teams: 'Winner G-QF-3 vs Winner G-QF-4' },
-          { Time: '1:00 PM - 1:30 PM', Category: 'Girls FINAL', Teams: 'Winner G-SF-1 vs Winner G-SF-2' },
-          { Time: '1:30 PM - 2:00 PM', Category: 'Boys FINAL', Teams: 'Winner B-SF-1 vs Winner B-SF-2' }
-        ]
-      }
-    },
+    id: 'football',
+    name: 'Football',
+    description: "The tournament will be played in a knockout-style format (single elimination). Matches will be officiated based on FIFA Laws of the Game. Team sizes are 11-18 players for Boys and 7-12 players for Girls.",
+    fee: '₹1300',
+    participants: '11-18', // Overall range, description has specifics
+    isTeamEvent: true,
+    contacts: { eventHeads: [{ name: 'Shourya Sandhu', email: 'shourya051150@greenwoodhigh.edu.in' }], sportsHeads },
+    logo: '/images/football.png',
+    image: '/images/event-cards/football.png',
+    timings: "Day 1: 9:30 AM - 4:30 PM | Day 2: 8:30 AM - 3:00 PM",
+    schedule: {
+      day1: [
+        { isHeading: true, 'MATCH NUMBER': 'BOYS PREQUARTER 9:30 - 1:00' },
+        { 'MATCH NUMBER': 'Pre Quarter 1', 'TIME PERIOD': '9:30 - 10:15', VENUE: 'ICSE TURF FIELD', NOTES: '' },
+        { 'MATCH NUMBER': 'Pre Quarter 2', 'TIME PERIOD': '10:35 - 11:20', VENUE: 'ICSE TURF FIELD', NOTES: 'TISB SPEC REQ' },
+        { 'MATCH NUMBER': 'Pre Quarter 3', 'TIME PERIOD': '11:25 - 12:10', VENUE: 'ICSE TURF FIELD', NOTES: '' },
+        { 'MATCH NUMBER': 'Pre Quarter 4', 'TIME PERIOD': '12:15 - 1:00', VENUE: 'ICSE TURF FIELD', NOTES: '' },
+        { isHeading: true, 'MATCH NUMBER': 'GIRLS QUARTER FINALS 1:10 - 1:50' },
+        { 'MATCH NUMBER': 'Quarter 1', 'TIME PERIOD': '1:10 - 1:50', VENUE: 'ICSE TURF FIELD', NOTES: '7 ASIDE FIELD 1, ALL MATCHES SIMULTANEOUSLY' },
+        { 'MATCH NUMBER': 'Quarter 2', 'TIME PERIOD': '1:10 - 1:50', VENUE: 'ICSE TURF FIELD', NOTES: '7 ASIDE FIELD 2, ALL MATCHES SIMULTANEOUSLY' },
+        { 'MATCH NUMBER': 'Quarter 3', 'TIME PERIOD': '1:10 - 1:50', VENUE: 'ICSE TURF FIELD', NOTES: '7 ASIDE FIELD 3, ALL MATCHES SIMULTANEOUSLY' },
+        { 'MATCH NUMBER': 'Quarter 4', 'TIME PERIOD': '1:10 - 1:50', VENUE: 'ICSE TURF FIELD', NOTES: '7 ASIDE FIELD 4, ALL MATCHES SIMULTANEOUSLY' },
+        { isHeading: true, 'MATCH NUMBER': 'BOYS QUARTER FINALS 2:00 - 4:30 (ONE GAME ON DAY 2)' },
+        { 'MATCH NUMBER': 'Quarter 1', 'TIME PERIOD': '2:00 - 2:45', VENUE: 'ICSE TURF FIELD', NOTES: '' },
+        { 'MATCH NUMBER': 'Quarter 2', 'TIME PERIOD': '2:50 - 3:35', VENUE: 'ICSE TURF FIELD', NOTES: '' },
+        { 'MATCH NUMBER': 'Quarter 3', 'TIME PERIOD': '3:40 - 4:25', VENUE: 'ICSE TURF FIELD', NOTES: '' }
+      ],
+      day2: [
+        { isHeading: true, 'MATCH NUMBER': 'BOYS QUARTER 8:30 - 9:15' },
+        { 'MATCH NUMBER': 'Quarter 4 (Boys)', 'TIME PERIOD': '8:30 - 9:15', VENUE: 'ICSE TURF FIELD', NOTES: '' },
+        { isHeading: true, 'MATCH NUMBER': 'GIRLS SEMIS 9:30 - 10:05' },
+        { 'MATCH NUMBER': 'Semi Final 1', 'TIME PERIOD': '9:30 - 10:05', VENUE: 'ICSE TURF FIELD', NOTES: '7 ASIDE FIELD 1' },
+        { 'MATCH NUMBER': 'Semi Final 2', 'TIME PERIOD': '9:30 - 10:05', VENUE: 'ICSE TURF FIELD', NOTES: '7 ASIDE FIELD 3' },
+        { isHeading: true, 'MATCH NUMBER': 'BOYS SEMIS 10:20 - 12:00' },
+        { 'MATCH NUMBER': 'Semi Final 1', 'TIME PERIOD': '10:20 - 11:05', VENUE: 'ICSE TURF FIELD', NOTES: '' },
+        { 'MATCH NUMBER': 'Semi Final 2', 'TIME PERIOD': '11:15 - 12:00', VENUE: 'ICSE TURF FIELD', NOTES: '' },
+        { isHeading: true, 'MATCH NUMBER': 'GIRLS FINAL 1:00 - 1:50' },
+        { 'MATCH NUMBER': 'Girls Final', 'TIME PERIOD': '1:00 - 1:50', VENUE: 'ICSE TURF FIELD', NOTES: '7 ASIDE FIELD 1' },
+        { isHeading: true, 'MATCH NUMBER': 'BOYS FINAL 2:00 - 3:00' },
+        { 'MATCH NUMBER': 'Boys Final', 'TIME PERIOD': '2:15 - 3:00', VENUE: 'ICSE TURF FIELD', NOTES: '' }
+      ]
+    }
+},
     {
       id: 'badminton',
       name: 'Badminton',
@@ -379,41 +385,41 @@
       }
     },
     {
-      id: 'basketball',
-      name: 'Basketball',
-      description: "Brackets will consist of 12 teams (4 byes will be given). The tournament will be played in a knockout-style format.",
-      fee: '₹1300',
-      participants: '10-12',
-      isTeamEvent: true,
-      contacts: { eventHeads: [{ name: 'Samrath Singh Dhingra', email: 'samrath053134@greenwoodhigh.edu.in' }, { name: 'Vikrant Shetty Tomar', email: 'vikrant052641@greenwoodhigh.edu.in' }], sportsHeads },
-      logo: '/images/basketball.png',
-      image: '/images/event-cards/basketball.png',
-      timings: "Day 1: 9:30 AM - 1:50 PM | Day 2: 8:30 AM - 12:50 PM",
-      schedule: {
-        day1: [
-          { 'Match Number': 'R1 Match 1 (Boys)', Court: 'ICSE Court 1', 'Time Period': '9:30 AM - 10:25 AM' },
-          { 'Match Number': 'R1 Match 2 (Boys)', Court: 'ICSE Court 2', 'Time Period': '9:30 AM - 10:25 AM' },
-          { 'Match Number': 'R1 Match 1 (Girls)', Court: 'IB Court', 'Time Period': '9:30 AM - 10:15 AM' },
-          { 'Match Number': 'R1 Match 3 (Boys)', Court: 'ICSE Court 1', 'Time Period': '10:35 AM - 11:30 AM' },
-          { 'Match Number': 'R1 Match 4 (Boys)', Court: 'ICSE Court 2', 'Time Period': '10:35 AM - 11:30 AM' },
-          { 'Match Number': 'R1 Match 2 (Girls)', Court: 'IB Court', 'Time Period': '10:35 AM - 11:20 AM' },
-          { 'Match Number': 'R2 Match 1 (Boys)', Court: 'ICSE Court 1', 'Time Period': '11:30 AM - 12:25 PM' },
-          { 'Match Number': 'R2 Match 2 (Boys)', Court: 'ICSE Court 2', 'Time Period': '11:30 AM - 12:25 PM' },
-          { 'Match Number': 'R1 Match 3 (Girls)', Court: 'IB Court', 'Time Period': '11:30 AM - 12:15 PM' },
-          { 'Match Number': 'R2 Match 3 (Boys)', Court: 'ICSE Court 1', 'Time Period': '12:55 PM - 1:50 PM' },
-          { 'Match Number': 'R2 Match 4 (Boys)', Court: 'ICSE Court 2', 'Time Period': '12:55 PM - 1:50 PM' },
-          { 'Match Number': 'R1 Match 4 (Girls)', Court: 'IB Court', 'Time Period': '12:55 PM - 1:40 PM' }
-        ],
-        day2: [
-          { 'Match Number': "Boy's Semifinal 1", Court: 'ICSE Court 1', 'Time Period': '8:30 AM - 9:25 AM' },
-          { 'Match Number': "Girl's Semifinal 1", Court: 'ICSE Court 2', 'Time Period': '8:30 AM - 9:15 AM' },
-          { 'Match Number': "Boy's Semifinal 2", Court: 'IB Court', 'Time Period': '8:30 AM - 9:25 AM' },
-          { 'Match Number': "Girl's Semifinal 2", Court: 'ICSE Court 2', 'Time Period': '9:40 AM - 10:25 AM' },
-          { 'Match Number': "Boy's Third Place Match", Court: 'ICSE Court 1', 'Time Period': '9:40 AM - 10:35 AM' },
-          { 'Match Number': "Girl's Third Place Match", Court: 'IB Court', 'Time Period': '11:00 AM - 11:45 AM' },
-          { 'Match Number': "Girl's Finals", Court: 'ICSE Court 2', 'Time Period': '11:00 AM - 11:45 AM' },
-          { 'Match Number': "Boy's Finals", Court: 'ICSE Court 1', 'Time Period': '11:45 AM - 12:50 PM' }
-        ]
-      }
+    id: 'basketball',
+    name: 'Basketball',
+    description: "Brackets will consist of 12 teams (4 byes will be given). The tournament will be played in a knockout-style format. Note: Only ICSE Courts are being used for Day 1.",
+    fee: '₹1300',
+    participants: '10-12',
+    isTeamEvent: true,
+    contacts: { eventHeads: [{ name: 'Samrath Singh Dhingra', email: 'samrath053134@greenwoodhigh.edu.in' }, { name: 'Vikrant Shetty Tomar', email: 'vikrant052641@greenwoodhigh.edu.in' }], sportsHeads },
+    logo: '/images/basketball.png',
+    image: '/images/event-cards/basketball.png',
+    timings: "Day 1: 9:30 AM - 3:20 PM | Day 2: 9:30 AM - 2:00 PM",
+    schedule: {
+      day1: [
+        { 'Match Number': 'R1 Match 1 (Boys)', Court: 'ICSE Court 1', 'Time Period': '9:30 AM - 10:10 AM' },
+        { 'Match Number': 'R1 Match 1 (Girls)', Court: 'ICSE Court 2', 'Time Period': '9:30 AM - 10:10 AM' },
+        { 'Match Number': 'R1 Match 2 (Boys)', Court: 'ICSE Court 1', 'Time Period': '10:20 AM - 11:00 AM' },
+        { 'Match Number': 'R1 Match 3 (Boys)', Court: 'ICSE Court 2', 'Time Period': '10:20 AM - 11:00 AM' },
+        { 'Match Number': 'R1 Match 4 (Boys)', Court: 'ICSE Court 1', 'Time Period': '11:10 AM - 11:50 AM' },
+        { 'Match Number': 'R1 Match 2 (Girls)', Court: 'ICSE Court 2', 'Time Period': '11:10 AM - 11:50 AM' },
+        { 'Match Number': 'R1 Match 3 (Girls)', Court: 'ICSE Court 2', 'Time Period': '12:30 PM - 1:10 PM' },
+        { 'Match Number': 'R2 Match 5 (Boys)', Court: 'ICSE Court 1', 'Time Period': '1:00 PM - 1:40 PM' },
+        { 'Match Number': 'R2 Match 6 (Boys)', Court: 'ICSE Court 1', 'Time Period': '1:50 PM - 2:30 PM' },
+        { 'Match Number': 'R1 Match 4 (Girls)', Court: 'ICSE Court 2', 'Time Period': '1:50 PM - 2:30 PM' },
+        { 'Match Number': 'R2 Match 7 (Boys)', Court: 'ICSE Court 1', 'Time Period': '2:40 PM - 3:20 PM' },
+        { 'Match Number': 'R2 Match 8 (Boys)', Court: 'ICSE Court 2', 'Time Period': '2:40 PM - 3:20 PM' }
+      ],
+      day2: [
+        { 'Match Number': "Boy's Semifinal 1", Court: 'ICSE Court 1', 'Time Period': '9:30 AM - 10:10 AM' },
+        { 'Match Number': "Girl's Semifinal 1", Court: 'ICSE Court 2', 'Time Period': '9:30 AM - 10:10 AM' },
+        { 'Match Number': "Girl's Semifinal 2", Court: 'ICSE Court 2', 'Time Period': '10:40 AM - 11:20 AM' },
+        { 'Match Number': "Boy's Semifinal 2", Court: 'ICSE Court 1', 'Time Period': '10:40 AM - 11:20 AM' },
+        { 'Match Number': "Girl's Third Place Match", Court: 'ICSE Court 2', 'Time Period': '11:30 AM - 12:10 PM' },
+        { 'Match Number': "Boys' Third Place Match", Court: 'ICSE Court 1', 'Time Period': '11:30 AM - 12:10 PM' },
+        { 'Match Number': "Girl's Finals", Court: 'Indoor Court', 'Time Period': '12:30 PM - 1:10 PM' },
+        { 'Match Number': "Boy's Finals", Court: 'Indoor Court', 'Time Period': '1:20 PM - 2:00 PM' }
+      ]
     }
+}
   ];
