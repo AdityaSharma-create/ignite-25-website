@@ -164,7 +164,7 @@
     name: 'Football',
     description: "The tournament will be played in a knockout-style format (single elimination). Matches will be officiated based on FIFA Laws of the Game. Team sizes are 11-18 players for Boys and 7-12 players for Girls.",
     fee: '₹1300',
-    participants: '11-18', // Overall range, description has specifics
+    participants: '11-18',
     isTeamEvent: true,
     contacts: { eventHeads: [{ name: 'Shourya Sandhu', email: 'shourya051150@greenwoodhigh.edu.in' }], sportsHeads },
     logo: '/images/football.png',
@@ -173,33 +173,33 @@
     schedule: {
       day1: [
         { isHeading: true, 'MATCH NUMBER': 'BOYS PREQUARTER 9:30 - 1:00' },
-        { 'MATCH NUMBER': 'Pre Quarter 1', 'TIME PERIOD': '9:30 - 10:15', VENUE: 'ICSE TURF FIELD', NOTES: '' },
-        { 'MATCH NUMBER': 'Pre Quarter 2', 'TIME PERIOD': '10:35 - 11:20', VENUE: 'ICSE TURF FIELD', NOTES: 'TISB SPEC REQ' },
-        { 'MATCH NUMBER': 'Pre Quarter 3', 'TIME PERIOD': '11:25 - 12:10', VENUE: 'ICSE TURF FIELD', NOTES: '' },
-        { 'MATCH NUMBER': 'Pre Quarter 4', 'TIME PERIOD': '12:15 - 1:00', VENUE: 'ICSE TURF FIELD', NOTES: '' },
-        { isHeading: true, 'MATCH NUMBER': 'GIRLS QUARTER FINALS 1:10 - 1:50' },
-        { 'MATCH NUMBER': 'Quarter 1', 'TIME PERIOD': '1:10 - 1:50', VENUE: 'ICSE TURF FIELD', NOTES: '7 ASIDE FIELD 1, ALL MATCHES SIMULTANEOUSLY' },
-        { 'MATCH NUMBER': 'Quarter 2', 'TIME PERIOD': '1:10 - 1:50', VENUE: 'ICSE TURF FIELD', NOTES: '7 ASIDE FIELD 2, ALL MATCHES SIMULTANEOUSLY' },
-        { 'MATCH NUMBER': 'Quarter 3', 'TIME PERIOD': '1:10 - 1:50', VENUE: 'ICSE TURF FIELD', NOTES: '7 ASIDE FIELD 3, ALL MATCHES SIMULTANEOUSLY' },
-        { 'MATCH NUMBER': 'Quarter 4', 'TIME PERIOD': '1:10 - 1:50', VENUE: 'ICSE TURF FIELD', NOTES: '7 ASIDE FIELD 4, ALL MATCHES SIMULTANEOUSLY' },
+        { 'MATCH NUMBER': 'Pre Quarter 1', 'TIME PERIOD': '9:30 - 10:15', VENUE: 'ICSE TURF FIELD' },
+        { 'MATCH NUMBER': 'Pre Quarter 2 (TISB SPEC REQ)', 'TIME PERIOD': '10:35 - 11:20', VENUE: 'ICSE TURF FIELD' },
+        { 'MATCH NUMBER': 'Pre Quarter 3', 'TIME PERIOD': '11:25 - 12:10', VENUE: 'ICSE TURF FIELD' },
+        { 'MATCH NUMBER': 'Pre Quarter 4', 'TIME PERIOD': '12:15 - 1:00', VENUE: 'ICSE TURF FIELD' },
+        { isHeading: true, 'MATCH NUMBER': 'GIRLS QUARTER FINALS 1:10 - 1:50 (ALL MATCHES SIMULTANEOUSLY)' },
+        { 'MATCH NUMBER': 'Quarter 1', 'TIME PERIOD': '1:10 - 1:50', VENUE: 'ICSE TURF FIELD (FIELD 1)' },
+        { 'MATCH NUMBER': 'Quarter 2', 'TIME PERIOD': '1:10 - 1:50', VENUE: 'ICSE TURF FIELD (FIELD 2)' },
+        { 'MATCH NUMBER': 'Quarter 3', 'TIME PERIOD': '1:10 - 1:50', VENUE: 'ICSE TURF FIELD (FIELD 3)' },
+        { 'MATCH NUMBER': 'Quarter 4', 'TIME PERIOD': '1:10 - 1:50', VENUE: 'ICSE TURF FIELD (FIELD 4)' },
         { isHeading: true, 'MATCH NUMBER': 'BOYS QUARTER FINALS 2:00 - 4:30 (ONE GAME ON DAY 2)' },
-        { 'MATCH NUMBER': 'Quarter 1', 'TIME PERIOD': '2:00 - 2:45', VENUE: 'ICSE TURF FIELD', NOTES: '' },
-        { 'MATCH NUMBER': 'Quarter 2', 'TIME PERIOD': '2:50 - 3:35', VENUE: 'ICSE TURF FIELD', NOTES: '' },
-        { 'MATCH NUMBER': 'Quarter 3', 'TIME PERIOD': '3:40 - 4:25', VENUE: 'ICSE TURF FIELD', NOTES: '' }
+        { 'MATCH NUMBER': 'Quarter 1', 'TIME PERIOD': '2:00 - 2:45', VENUE: 'ICSE TURF FIELD' },
+        { 'MATCH NUMBER': 'Quarter 2', 'TIME PERIOD': '2:50 - 3:35', VENUE: 'ICSE TURF FIELD' },
+        { 'MATCH NUMBER': 'Quarter 3', 'TIME PERIOD': '3:40 - 4:25', VENUE: 'ICSE TURF FIELD' }
       ],
       day2: [
         { isHeading: true, 'MATCH NUMBER': 'BOYS QUARTER 8:30 - 9:15' },
-        { 'MATCH NUMBER': 'Quarter 4 (Boys)', 'TIME PERIOD': '8:30 - 9:15', VENUE: 'ICSE TURF FIELD', NOTES: '' },
+        { 'MATCH NUMBER': 'Quarter 4 (Boys)', 'TIME PERIOD': '8:30 - 9:15', VENUE: 'ICSE TURF FIELD' },
         { isHeading: true, 'MATCH NUMBER': 'GIRLS SEMIS 9:30 - 10:05' },
-        { 'MATCH NUMBER': 'Semi Final 1', 'TIME PERIOD': '9:30 - 10:05', VENUE: 'ICSE TURF FIELD', NOTES: '7 ASIDE FIELD 1' },
-        { 'MATCH NUMBER': 'Semi Final 2', 'TIME PERIOD': '9:30 - 10:05', VENUE: 'ICSE TURF FIELD', NOTES: '7 ASIDE FIELD 3' },
+        { 'MATCH NUMBER': 'Semi Final 1', 'TIME PERIOD': '9:30 - 10:05', VENUE: 'ICSE TURF FIELD (FIELD 1)' },
+        { 'MATCH NUMBER': 'Semi Final 2', 'TIME PERIOD': '9:30 - 10:05', VENUE: 'ICSE TURF FIELD (FIELD 3)' },
         { isHeading: true, 'MATCH NUMBER': 'BOYS SEMIS 10:20 - 12:00' },
-        { 'MATCH NUMBER': 'Semi Final 1', 'TIME PERIOD': '10:20 - 11:05', VENUE: 'ICSE TURF FIELD', NOTES: '' },
-        { 'MATCH NUMBER': 'Semi Final 2', 'TIME PERIOD': '11:15 - 12:00', VENUE: 'ICSE TURF FIELD', NOTES: '' },
+        { 'MATCH NUMBER': 'Semi Final 1', 'TIME PERIOD': '10:20 - 11:05', VENUE: 'ICSE TURF FIELD' },
+        { 'MATCH NUMBER': 'Semi Final 2', 'TIME PERIOD': '11:15 - 12:00', VENUE: 'ICSE TURF FIELD' },
         { isHeading: true, 'MATCH NUMBER': 'GIRLS FINAL 1:00 - 1:50' },
-        { 'MATCH NUMBER': 'Girls Final', 'TIME PERIOD': '1:00 - 1:50', VENUE: 'ICSE TURF FIELD', NOTES: '7 ASIDE FIELD 1' },
+        { 'MATCH NUMBER': 'Girls Final', 'TIME PERIOD': '1:00 - 1:50', VENUE: 'ICSE TURF FIELD (FIELD 1)' },
         { isHeading: true, 'MATCH NUMBER': 'BOYS FINAL 2:00 - 3:00' },
-        { 'MATCH NUMBER': 'Boys Final', 'TIME PERIOD': '2:15 - 3:00', VENUE: 'ICSE TURF FIELD', NOTES: '' }
+        { 'MATCH NUMBER': 'Boys Final', 'TIME PERIOD': '2:15 - 3:00', VENUE: 'ICSE TURF FIELD' }
       ]
     }
 },
