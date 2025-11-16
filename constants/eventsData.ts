@@ -120,8 +120,8 @@
       participants: '1',
       isTeamEvent: false,
       contacts: { culturalHeads },
-      logo: '/images/respwan.png',
-      image: '/images/event-cards/respwan.png'
+      logo: '/images/respawn.png',
+      image: '/images/event-cards/respawn.png'
     },
     {
       id: 'thespian-of-melody',
