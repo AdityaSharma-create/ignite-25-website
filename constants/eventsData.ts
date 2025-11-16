@@ -37,13 +37,36 @@
     {
       id: 'dress-to-impress',
       name: 'Dress to Impress',
-      description: "Teams of 4-6 will take the stage for an 8-minute runway performance showcasing their interpretation of assigned themes, followed by a brief design explanation. Round 1 explores fashion Through the Eras—from Victorian Royale to Y2K Pop Culture. Finalists advance to Round 2, where they reimagine classic characters from the movies Alice in Wonderland, Rapunzle, and Cinderella with a dark and eerie twist while preserving their essence.",
+      description: `
+      <p>Teams will be allotted one of the themes given below through mail. Teams of 4-6 will perform a runway walk to showcase their interpretation of the themes followed by an explanation of their design process. The total time on stage allotted is 7 minutes.</p>
+      <br />
+      <h4><strong>Round 1: Through The Eras</strong></h4>
+      <p>Themes:</p>
+      <ul class="list-disc list-inside mt-2">
+        <li>The 19th Century- Victorian Royale</li>
+        <li>1920s- Roaring 20’s</li>
+        <li>1950s- Rock n Roll</li>
+        <li>1970s- Disco Fever</li>
+        <li>1980s- The Neon Decade</li>
+        <li>2000s-Y2K Pop Culture</li>
+      </ul>
+      <br />
+      <h4><strong>Round 2</strong></h4>
+      <p>Finalists must add their dark, eerie and creepy twist to their chosen characters from the movies while keeping their original essence. No repetition of characters within the same group. These themes will be assigned when finalists are being announced.</p>
+      <p>Themes:</p>
+      <ul class="list-disc list-inside mt-2">
+        <li>Alice in Wonderland</li>
+        <li>Rapunzel</li>
+        <li>Cinderella</li>
+      </ul>
+    `,
       fee: '₹1000',
       participants: '4-6',
       isTeamEvent: true,
       contacts: { culturalHeads },
       logo: '/images/dti.png',
-      image: '/images/event-cards/dti.png'
+      image: '/images/event-cards/dress-to-impress.webp',
+      timings: "Day 1: 10:00 AM - 11:30 AM | Day 2: 9:30 AM - 11:00 AM"
     },
     {
       id: 'dyed-in-crimson',
@@ -278,18 +301,23 @@
         day1: [
           { Time: '09:15 - 09:30', Schedule: 'Detail 1 sighting time' },
           { Time: '09:30 - 10:30', Schedule: 'Detail 1 match time' },
+          { Time: '10:20 - 10:25', Schedule: 'Registrations + security check for detail 2' },
           { Time: '10:35 - 10:50', Schedule: 'Detail 2 sighting time' },
           { Time: '10:50 - 11:50', Schedule: 'Detail 2 match time' },
           { Time: '11:50 - 12:10', Schedule: 'Lunch break' },
+          { Time: '12:15 - 12:20', Schedule: 'Registrations + security check for detail 3' },
           { Time: '12:30 - 12:45', Schedule: 'Detail 3 sighting time' },
           { Time: '12:45 - 01:45', Schedule: 'Detail 3 match time' }
         ],
         day2: [
+          { Time: '09:00 - 09:05', Schedule: 'Registrations + security check for detail 1' },
           { Time: '09:15 - 09:30', Schedule: 'Detail 1 sighting time' },
           { Time: '09:30 - 10:30', Schedule: 'Detail 1 match time' },
+          { Time: '10:20 - 10:25', Schedule: 'Registrations + security check for detail 2' },
           { Time: '10:35 - 10:50', Schedule: 'Detail 2 sighting time' },
           { Time: '10:50 - 11:50', Schedule: 'Detail 2 match time' },
           { Time: '11:50 - 12:10', Schedule: 'Lunch break' },
+          { Time: '12:15 - 12:20', Schedule: 'Registrations + security check for detail 3' },
           { Time: '12:30 - 12:45', Schedule: 'Detail 3 sighting time' },
           { Time: '12:45 - 01:45', Schedule: 'Detail 3 match time' },
           { Time: '01:55', Schedule: 'Match results posted' }
