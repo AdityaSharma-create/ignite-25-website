@@ -65,7 +65,7 @@
       isTeamEvent: true,
       contacts: { culturalHeads },
       logo: '/images/dti.png',
-      image: '/images/event-cards/dress-to-impress.webp',
+      image: '/images/event-cards/dti.png',
       timings: "Day 1: 10:00 AM - 11:30 AM | Day 2: 9:30 AM - 11:00 AM"
     },
     {
