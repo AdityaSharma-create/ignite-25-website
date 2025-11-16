@@ -121,7 +121,7 @@
       isTeamEvent: false,
       contacts: { culturalHeads },
       logo: '/images/respwan.png',
-      image: '/images/event-cardsrespwan.png'
+      image: '/images/event-cards/respwan.png'
     },
     {
       id: 'thespian-of-melody',
@@ -154,7 +154,7 @@
       isTeamEvent: true,
       contacts: { culturalHeads },
       logo: '/images/wows.png',
-      image: '/images/event-cardswows.png'
+      image: '/images/event-cards/wows.png'
     }
   ];
 
