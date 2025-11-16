@@ -295,7 +295,7 @@
       isTeamEvent: false,
       contacts: { eventHeads: [{ name: 'Sandhya Jothi Pandiyan', email: 'sandhya053140@greenwoodhigh.edu.in' }], sportsHeads },
       logo: '/images/shooting.png',
-      image: '/images/event-cards/shooting.webp',
+      image: '/images/event-cards/shooting.png',
       timings: "Day 1: 9:15 AM - 1:45 PM | Day 2: 9:00 AM - 1:55 PM",
       schedule: {
         day1: [
