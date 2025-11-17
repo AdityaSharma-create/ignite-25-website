@@ -174,7 +174,7 @@
       day1: [
         { isHeading: true, 'MATCH NUMBER': 'BOYS PREQUARTER 9:30 - 1:00' },
         { 'MATCH NUMBER': 'Pre Quarter 1', 'TIME PERIOD': '9:30 - 10:15', VENUE: 'ICSE TURF FIELD' },
-        { 'MATCH NUMBER': 'Pre Quarter 2 (TISB SPEC REQ)', 'TIME PERIOD': '10:35 - 11:20', VENUE: 'ICSE TURF FIELD' },
+        { 'MATCH NUMBER': 'Pre Quarter 2', 'TIME PERIOD': '10:35 - 11:20', VENUE: 'ICSE TURF FIELD' },
         { 'MATCH NUMBER': 'Pre Quarter 3', 'TIME PERIOD': '11:25 - 12:10', VENUE: 'ICSE TURF FIELD' },
         { 'MATCH NUMBER': 'Pre Quarter 4', 'TIME PERIOD': '12:15 - 1:00', VENUE: 'ICSE TURF FIELD' },
         { isHeading: true, 'MATCH NUMBER': 'GIRLS QUARTER FINALS 1:10 - 1:50 (ALL MATCHES SIMULTANEOUSLY)' },
