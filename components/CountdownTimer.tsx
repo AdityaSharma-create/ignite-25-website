@@ -6,8 +6,11 @@ const CountdownTimer: React.FC<{ targetDate: string }> = ({ targetDate }) => {
 
   if (isEventLive) {
     return (
-      <h2 className="text-5xl md:text-6xl font-bold text-[#FF7B00] animate-pulse">
-        Welcome to Ignite '25!
+      <h2 
+        className="text-5xl md:text-6xl font-extrabold text-white animate-pulse"
+        style={{ textShadow: '0 0 15px rgba(255, 123, 0, 0.8), 0 0 25px rgba(220, 20, 60, 0.6)' }}
+      >
+         Ignite '25 is Live 🔥
       </h2>
     );
   }
