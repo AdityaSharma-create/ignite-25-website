@@ -10,7 +10,6 @@ const goldSponsors = [
 const bronzeSponsors = [
   { name: 'Posterwa', image: '/images/sponsors/posterwa.png', description: 'An e-commerce platform driven by a community of fans, Posterwa offers affordable, high-quality merchandise related to anime, sports, television shows, and other pop culture phenomena.' },
   { name: 'Hult Business School', image: '/images/sponsors/hult.png', description: 'A private business school with multiple global campuses, Hult International Business School provides undergraduate, master\'s, and MBA programs that emphasize a practical and international approach to business education.' },
-  { name: 'Plateo Shoes', image: '/images/sponsors/plateo.png', description: 'A Bengaluru-based footwear brand, Plateo designs and creates innovative and multi-purpose shoes specifically for Indian children, emphasizing foot health and sustainable manufacturing practices.' },
   { name: 'Pixie Photobooth', image: '/images/sponsors/pixie.png', description: 'A premium photobooth rental service in India, Pixie Photobooth offers modern and interactive photo booths for weddings and a variety of other events.' },
   { name: 'Dash Square', image: '/images/sponsors/dash.png', description: 'Bangalore-based luxury furniture retailer that has been curating a collection of fine furniture from leading global brands for over two decades. They offer a wide range of products, including sofas, dining sets, beds, and home decor, positioning themselves as a one-stop solution for premium home furnishings.' }
 ];

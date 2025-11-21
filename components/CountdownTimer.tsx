@@ -1,30 +1,35 @@
-
 import React from 'react';
-import { useCountdown } from '../hooks/useCountdown';
+import useCountdown from '../hooks/useCountdown';
 
-interface CountdownTimerProps {
-  targetDate: string;
-}
+const CountdownTimer: React.FC<{ targetDate: string }> = ({ targetDate }) => {
+  const { days, hours, minutes, seconds, isEventLive } = useCountdown(targetDate);
 
-const DateTimeDisplay: React.FC<{ value: number; type: string }> = ({ value, type }) => {
-  return (
-    <div className="flex flex-col items-center justify-center bg-black/20 backdrop-blur-sm rounded-lg p-3 md:p-6 w-20 md:w-32">
-      <p className="text-3xl md:text-5xl font-black text-white">{value.toString().padStart(2, '0')}</p>
-      <span className="text-xs md:text-sm uppercase tracking-widest text-gray-400">{type}</span>
-    </div>
-  );
-};
-
-
-const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
-  const { days, hours, minutes, seconds } = useCountdown(targetDate);
+  if (isEventLive) {
+    return (
+      <h2 className="text-5xl md:text-6xl font-bold text-[#FF7B00] animate-pulse">
+        Welcome to Ignite '25!
+      </h2>
+    );
+  }
 
   return (
-    <div className="flex items-center justify-center space-x-2 md:space-x-4">
-      <DateTimeDisplay value={days} type={'Days'} />
-      <DateTimeDisplay value={hours} type={'Hours'} />
-      <DateTimeDisplay value={minutes} type={'Minutes'} />
-      <DateTimeDisplay value={seconds} type={'Seconds'} />
+    <div className="flex justify-center space-x-4 md:space-x-8 text-white">
+      <div className="text-center">
+        <p className="text-4xl md:text-6xl font-bold">{days}</p>
+        <p className="text-sm md:text-base">Days</p>
+      </div>
+      <div className="text-center">
+        <p className="text-4xl md:text-6xl font-bold">{hours}</p>
+        <p className="text-sm md:text-base">Hours</p>
+      </div>
+      <div className="text-center">
+        <p className="text-4xl md:text-6xl font-bold">{minutes}</p>
+        <p className="text-sm md:text-base">Minutes</p>
+      </div>
+      <div className="text-center">
+        <p className="text-4xl md:text-6xl font-bold">{seconds}</p>
+        <p className="text-sm md:text-base">Seconds</p>
+      </div>
     </div>
   );
 };
