@@ -87,24 +87,24 @@ const HomePage: React.FC = () => {
             <p className="mt-2 text-sm text-yellow-500 font-semibold">Registrations close on the 18th of November.</p>
         </div>
       </section>
-      
+
       {/* Campus Maps Section */}
       <section className="container mx-auto px-4 py-16">
           <h2 className="text-4xl font-bold text-center mb-10 text-white">Find Your Way</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               {/* ICSE Campus Map Card */}
-              <a href="/images/icse-campus-map.jpg" target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden shadow-lg group transform hover:scale-105 transition-transform duration-300">
+              <a href="/icse-campus-map.jpg" target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden shadow-lg group transform hover:scale-105 transition-transform duration-300">
                   <div className="relative">
-                      <img src="/images/icse-campus-map.jpg" alt="ICSE Campus Map" className="w-full h-auto object-cover" />
+                      <img src="icse-campus-map.jpg" alt="ICSE Campus Map" className="w-full h-auto object-cover" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                       <h3 className="absolute bottom-0 left-0 p-6 text-2xl font-bold text-white">ICSE Campus</h3>
                   </div>
               </a>
 
               {/* IGCSE Campus Map Card */}
-              <a href="/images/igcse-campus-map.jpg" target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden shadow-lg group transform hover:scale-105 transition-transform duration-300">
+              <a href="/igcse-campus-map.jpg" target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden shadow-lg group transform hover:scale-105 transition-transform duration-300">
                   <div className="relative">
-                      <img src="/images/igcse-campus-map.jpg" alt="IGCSE Campus Map" className="w-full h-auto object-cover" />
+                      <img src="/igcse-campus-map.jpg" alt="IGCSE Campus Map" className="w-full h-auto object-cover" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                       <h3 className="absolute bottom-0 left-0 p-6 text-2xl font-bold text-white">IGCSE Campus</h3>
                   </div>
